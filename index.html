@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebay</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Market Sans", Arial, sans-serif;
+        font-size: 12px;
+    }
+
+    .t-right a {
+        font-size: 12px;
+    }
+
+    .t-left a {
+        font-size: 12px;
+    }
+
+    .t-left span {
+        font-size: 14px;
+    }
+
+    .image1 {
+        background-image: url('./images/background1.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px !important;
+        border-radius: 10px;
+    }
+
+    .image2 {
+        background-image: url('./images/background2.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px !important;
+        border-radius: 10px;
+    }
+
+    .image3 {
+        background-image: url('./images/background3.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px !important;
+        border-radius: 10px;
+    }
+
+    .image4 {
+        background-image: url('./images/background4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px !important;
+        border-radius: 10px;
+    }
+    .image5 {
+        background-image: url('./images/background5.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 265px !important;
+        border-radius: 10px;
+    }
+
+    footer li {
+        list-style: none;
+    }
+
+    footer span a {
+        color: #707070;
+    }
+</style>
+
+<body>
+    <header class="">
+        <nav class="w-100 m-auto bg-white">
+            <div class="container-xl m-auto bg-white">
+                <div class="top d-flex justify-content-between fs-6 align-items-center">
+                    <div class="t-left d-flex gap-4 fs-6">
+                        <span>Hi! <a href="#" class="">Sign in</a> or <a href="#" class="">register</a></span>
+                        <span><a href="#" class="link-underline-light text-black">Daily Deals</a></span>
+                        <span><a href="#" class="link-underline-light text-black">Help & Contact</a></span>
+                    </div>
+                    <div class="t-right d-flex gap-4">
+                        <span><a href="#" class="link-underline-light text-black">Ship To</a></span>
+                        <span><a href="#" class="link-underline-light text-black">Sell</a></span>
+                        <span><a href="#" class="link-underline-light text-black">watchlist <i
+                                    class="fa-solid fa-chevron-down"></i></a></span>
+                        <span><a href="#" class="link-underline-light text-black">My eBay <i
+                                    class="fa-solid fa-chevron-down"></i></a></span>
+                        <span><a href="#"><i class="fa-regular fa-bell text-black"></i></a></span>
+                        <span><a href="#"><i class="fa-solid fa-cart-shopping text-black"></i></a></span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="bottom container-xl m-auto d-flex align-items-center gap-3">
+                <div class="d-flex w-25">
+                    <img class="w-50" src="./images/EBay_logo.svg.png" alt="">
+                    <span class="d-flex align-items-center">
+                        <a href="#" class="text-wrap" style="width: 6rem;">Shop by Categories </a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </div>
+
+                <div class="input-group ">
+                    <input type="text" class="form-control border-black border-2 rounded-start-pill"
+                        aria-label="Text input with dropdown button" placeholder="Search for anything">
+                    <button
+                        class="btn btn-outline-secondary dropdown-toggle border-black border-2 rounded-end-pill me-2"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">All Categories</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">All Categories</a></li>
+                        <li><a class="dropdown-item" href="#">Antique</a></li>
+                        <li><a class="dropdown-item" href="#">Arts</a></li>
+                        <li><a class="dropdown-item" href="#">Baby</a></li>
+                        <li><a class="dropdown-item" href="#">Books</a></li>
+                        <li><a class="dropdown-item" href="#">Business & Industries</a></li>
+                    </ul>
+                    <button type="button" class="btn btn-primary px-5 rounded-pill">Search</button>
+                </div>
+
+                <div class="">
+
+                    <a href="#" class="text-decoration-none text-black">Advanced</a>
+                </div>
+
+            </div>
+            <hr>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="w-50 d-flex m-auto gap-4 justify-content-center mb-3">
+                <span><a href="#" class="text-decoration-none text-black">Saved</a></span>
+                <span><a href="#" class="text-decoration-none text-black">Electronics</a></span>
+                <span><a href="#" class="text-decoration-none text-black">Motors</a></span>
+                <span><a href="#" class="text-decoration-none text-black">Fashion</a></span>
+                <span><a href="#" class="text-decoration-none text-black">Collectibles and Art</a></span>
+                <span><a href="#" class="text-decoration-none text-black">Sports</a></span>
+                <span><a href="#" class="text-decoration-none text-black">Healths & Beauty</a></span>
+                <span><a href="#" class="text-decoration-none text-black">Industrial Equipment</a></span>
+                <span><a href="#" class="text-decoration-none text-black">Home & Graden</a></span>
+                <span><a href="#" class="text-decoration-none text-black">Deals</a></span>
+                <span><a href="#" class="text-decoration-none text-black">Sell</a></span>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-xl m-auto">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active image1 px-2 pt-4">
+                            <h1 class="display-4 fw-bold w-25">Be the star of this summer's game</h1>
+                            <p class="fs-4 w-25">Step up to the podium with top sneakers and great prices</p>
+                            <button class="btn btn-outline-dark py-3 px-5 rounded-pill">Shop Sneakers</button>
+                        </div>
+                        <div class="carousel-item image2 px-4 pt-4 text-white">
+                            <h1 class="display-4 fw-bold w-25 ">Summer fun begins off-road</h1>
+                            <p class="fs-4 w-25">Upgrade your ATV or UTV with the right parts or accessories</p>
+                            <button class="btn btn-outline-light py-3 px-5 rounded-pill text-white">Find your parts</button>
+                        </div>
+                        <div class="carousel-item image3 px-4 pt-4">
+                            <h1 class="display-4 fw-bold w-25">Your Style, Your Space, Your Summer</h1>
+                            <p class="fs-4 w-25">Explore a range of item to complete your home's look</p>
+                            <button class="btn btn-outline-dark py-3 px-5 rounded-pill">Shop Now</button>
+                        </div>
+                        <div class="carousel-item image4 px-4 pt-4">
+                            <h1 class="display-4 fw-bold w-25">Gear up for off-road adventures</h1>
+                            <p class="fs-4 w-25">Find top ATV or UTV parts and accessories for this summer.</p>
+                            <button class="btn btn-outline-dark py-3 px-5 rounded-pill">Shop Now</button>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-xl m-auto my-5">
+                <h2 class="pt-5 mb-5 display-6 fw-bold"> Explore Popular Categories </h2>
+                <div class="d-flex">
+                    <div class="d-flex justify-content-center align-items-center flex-column gap-3">
+                        <div class=" w-75">
+                            <img src="./images/01_PopularDestination_Luxury.jpg"
+                                class="w-100 rounded-circle border-black" alt="">
+                        </div>
+                        <span class="fw-bold">
+                            Luxury
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column gap-3">
+                        <div class=" w-75">
+                            <img src="./images/02_PopularDestination_Sneakers.jpg"
+                                class="w-100 rounded-circle border-black" alt="">
+                        </div>
+                        <span class="fw-bold">
+                            Sneakers
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column gap-3">
+                        <div class=" w-75">
+                            <img src="./images/03_PopularDestination_Tire.jpg" class="w-100 rounded-circle border-black"
+                                alt="">
+                        </div>
+                        <span class="fw-bold">
+                            P& A
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column gap-3">
+                        <div class=" w-75">
+                            <img src="./images/ECM_PopularDestination_Reburbished.jpg"
+                                class="w-100 rounded-circle border-black" alt="">
+                        </div>
+                        <span class="fw-bold">
+                            Refurbished
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column gap-3">
+                        <div class=" w-75">
+                            <img src="./images/05_PopularDestination_Cards.jpg"
+                                class="w-100 rounded-circle border-black" alt="">
+                        </div>
+                        <span class="fw-bold">
+                            Trading Cards
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column gap-3">
+                        <div class=" w-75">
+                            <img src="./images/06_PopularDestination_PreLoved.jpg"
+                                class="w-100 rounded-circle border-black" alt="">
+                        </div>
+                        <span class="fw-bold">
+                            Pre-loved Luxury
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column gap-3">
+                        <div class=" w-75">
+                            <img src="./images/07_PopularDestination_Toys.jpg" class="w-100 rounded-circle border-black"
+                                alt="">
+                        </div>
+                        <span class="fw-bold">
+                            Toys
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-xl m-auto d-flex flex-column gap-5">
+                <div class="w-100 image4 px-4 pt-4">
+                    <h3 class="display-4 fw-bold w-25">Gear up for off-road adventures</h3>
+                    <p class="fs-4 w-25">Find top ATV or UTV parts and accessories for this summer.</p>
+                    <button class="btn btn-outline-dark py-3 px-5 rounded-pill">Shop Now</button>
+                </div>
+                <div class="w-100 mb-5 rounded">
+                    <div class="card rounded">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div class="card-body d-flex flex-column justify-content-start align-items-start text-start gap-3 text-wrap bg-body-tertiary rounded-start">
+                                    <h2 class="card-title display-4 fw-bold w-75">Make space for you</h2>
+                                    <p class="card-text fs-4 w-75">Give your home a personal touch with products you’ll
+                                        adore.</p>
+                                    <button class="btn btn-outline-dark py-3 px-5 rounded-pill">Shop Now</button>
+                                </div>
+                            </div>
+                            <div class="col-md-8 rounded-end image5">
+                                <!-- <img src="./images/background5.jpeg" class="img-fluid w-100 " alt="..."> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-body-tertiary py-5 border-top border-secondary-subtle">
+        <div class="container-xl m-auto d-flex justify-content-between align-items-start mt-5">
+            <div>
+                <ul class="d-flex flex-column gap-2">
+                    <li class="list-style-none"><a href="#" class="text-decoration-none fw-bold text-black">Buy</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary">Registration</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary">eBay Money Back Guarantee</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary">Bidding & buying help</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary">Stores</a></li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column gap-2">
+                <div>
+                    <ul class="d-flex flex-column gap-2">
+                        <li><a href="#" class="text-decoration-none fw-bold text-black">Sell</a></li>
+                        <li><a href="#" class="text-decoration-none text-body-tertiary">Start Selling</a></li>
+                        <li><a href="#" class="text-decoration-none text-body-tertiary">Learn to sell</a></li>
+                        <li><a href="#" class="text-decoration-none text-body-tertiary">Affiliates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="d-flex flex-column gap-2">
+                        <li><a href="#" class="text-decoration-none fw-bold text-black">Tools & Apps</a></li>
+                        <li><a href="#" class="text-decoration-none text-body-tertiary">Developer</a></li>
+                        <li><a href="#" class="text-decoration-none text-body-tertiary">Security center</a></li>
+                        <li><a href="#" class="text-decoration-none text-body-tertiary">Site map</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <ul class="d-flex flex-column gap-2">
+                    <li><a href="#" class="text-decoration-none fw-bold text-black">Stay connected</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary">eBay's Blog</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary"><i
+                                class="fa-brands fa-square-facebook"></i> Facebook</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary"><i
+                                class="fa-brands fa-square-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="d-flex flex-column gap-2">
+                    <li><a href="#" class="text-decoration-none fw-bold text-black">About eBay</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary">Company Info</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary">News</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary">Investors</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary">Career</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary">Government Relations</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary">Advertise with us</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary">Policies</a></li>
+                    <li><a href="#" class="text-decoration-none text-body-tertiary">Verified Rights Owner (VeRO)
+                            Program</a></li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column gap-2">
+                <div>
+                    <ul class="d-flex flex-column gap-2">
+                        <li><a href="#" class="text-decoration-none fw-bold text-black">Help & Contact</a></li>
+                        <li><a href="#" class="text-decoration-none text-body-tertiary">Seller Information Center</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none text-body-tertiary">Contact us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="d-flex flex-column gap-2">
+                        <li><a href="#" class="text-decoration-none fw-bold text-black">Community</a></li>
+                        <li><a href="#" class="text-decoration-none text-body-tertiary">Announcements</a></li>
+                        <li><a href="#" class="text-decoration-none text-body-tertiary">Discussion boards</a></li>
+                        <li><a href="#" class="text-decoration-none text-body-tertiary">Bay Giving Works</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="d-flex flex-column gap-2">
+                        <li class="fw-bold text-black">eBay Sites</li>
+                        <li><a href="#" class="text-decoration-none">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-light dropdown-toggle px-5 py-3" data-bs-toggle="dropdown" aria-expanded="false">
+                                  United State 
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li></li>
+                                </ul>
+                              </div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xl m-auto d-flex align-items-center justify-content-between text-center pt-5">
+            <span class="w-100 m-auto">
+                Copyright © 1995-2024 eBay Inc. All Rights Reserved. <a href="#">Accesibility,</a> <a href="#"> User
+                    Agreement,</a> <a href="#">Privacy</a> <a href="#">Consumer Health Data</a> <a href="#">Payment Term
+                    of Use,</a> <a href="#">Cookies,</a> <a href="#">CA Privacy Notice</a> <a href="#">Your Privacy
+                    Choice </a> and <a href="#">AdChoice</a>
+            </span>
+        </div>
+
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
